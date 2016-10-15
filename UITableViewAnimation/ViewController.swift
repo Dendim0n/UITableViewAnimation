@@ -39,6 +39,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.imageView?.image = UIImage.init(named: "test.jpg")
         cell.backgroundColor = randomColor()
         cell.textLabel?.text = "line:\(indexPath.row)"
         return cell

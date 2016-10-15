@@ -25,10 +25,11 @@ class AnimTableView: UITableView {
             super.reloadData()
         }
         self.alpha = 0
-        let diff = 0.05
+        let delay = 0.05
         let tableHeight = self.bounds.size.height
         let tableWidth = self.bounds.size.width
         let cells = self.visibleCells
+        var damping = CGFloat(1.0)
         
         var transform:CGAffineTransform
         
@@ -37,8 +38,10 @@ class AnimTableView: UITableView {
             transform = CGAffineTransform.init(translationX: 0, y: tableHeight)
         case .fromLeftToRight:
             transform = CGAffineTransform.init(translationX: -tableWidth, y: 0)
+            damping = 0.9
         case .fromRightToLeft:
             transform = CGAffineTransform.init(translationX: tableWidth, y: 0)
+            damping = 0.9
         }
         
         for cell in cells {
@@ -47,7 +50,7 @@ class AnimTableView: UITableView {
         self.alpha = 1
         
         for i in 0...cells.count - 1 {
-            UIView.animate(withDuration: 1.6, delay: Double(i) * diff, usingSpringWithDamping: 5, initialSpringVelocity: 5, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+            UIView.animate(withDuration: 1, delay: Double(i) * delay, usingSpringWithDamping: damping, initialSpringVelocity: 5, options: UIViewAnimationOptions.allowUserInteraction, animations: {
                 cells[i].transform = CGAffineTransform.init(translationX: 0, y: 0)
                 }, completion: nil)
         }

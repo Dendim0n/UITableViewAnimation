@@ -13,6 +13,7 @@
 		4071361B1DB0DB18006395AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4071361A1DB0DB18006395AC /* Assets.xcassets */; };
 		4071361E1DB0DB18006395AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4071361C1DB0DB18006395AC /* LaunchScreen.storyboard */; };
 		407136271DB0DB59006395AC /* UITableView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407136261DB0DB59006395AC /* UITableView+ReloadAnimation.swift */; };
+		5910CF091DB2380F0025AAB1 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5910CF081DB2380F0025AAB1 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4071361D1DB0DB18006395AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4071361F1DB0DB18006395AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407136261DB0DB59006395AC /* UITableView+ReloadAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadAnimation.swift"; sourceTree = "<group>"; };
+		5910CF081DB2380F0025AAB1 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				407136251DB0DB2C006395AC /* Source */,
 				407136131DB0DB18006395AC /* AppDelegate.swift */,
 				407136151DB0DB18006395AC /* ViewController.swift */,
+				5910CF081DB2380F0025AAB1 /* test.jpg */,
 				407136171DB0DB18006395AC /* Main.storyboard */,
 				4071361A1DB0DB18006395AC /* Assets.xcassets */,
 				4071361C1DB0DB18006395AC /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 				4071361E1DB0DB18006395AC /* LaunchScreen.storyboard in Resources */,
 				4071361B1DB0DB18006395AC /* Assets.xcassets in Resources */,
 				407136191DB0DB18006395AC /* Main.storyboard in Resources */,
+				5910CF091DB2380F0025AAB1 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,7 @@
 				407136241DB0DB18006395AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
